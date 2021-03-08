@@ -20,7 +20,6 @@ class _MyAppState extends State<MyApp> {
   void changeColor() {
     setState(() {
       _color = Color.fromARGB(
-        //or with fromRGBO with fourth arg as _random.nextDouble(),
         _random.nextInt(256),
         _random.nextInt(256),
         _random.nextInt(256),
@@ -47,9 +46,8 @@ class _MyAppState extends State<MyApp> {
                   child: Text(
                     "Hi there!",
                     style: TextStyle(
-                      // а у текста появился виджет, который его стилизует
-                      color: Colors.black, // задаем ему цвет текста
-                      fontSize: 32.0, // и размер шрифта
+                      color: Colors.black, 
+                      fontSize: 32.0, 
                     ),
                   ),
                 )),
